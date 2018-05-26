@@ -70,7 +70,8 @@ var Player = function(x,y) {
   this.xo = x;
   this.yo = y;
 
-  this.score = 0;
+	// Set number of wins at the beggining of the game
+  this.wins = 0;
 };
 
 
@@ -87,6 +88,7 @@ Player.prototype.handleInput = function(dir) {
 		this.x = this.x + 101;
 	}
 
+
   // Check the position of the player
   if (this.x < 0) {
     // Player is off to the left side of the board, move the player back to zero
@@ -98,8 +100,10 @@ Player.prototype.handleInput = function(dir) {
   } else if (this.y > 380) {
     // Player is off the bottom of the board
     this.y = 380;
-  } else if (this.y < -20) {
+  } else if (this.y < 60) {
     // Player is off the top of the board
+		player.wins++;
+		document.querySelector('.score').innerHTML = "Score: " + this.wins;
     this.y = 380;
   }
 
@@ -111,6 +115,9 @@ Player.prototype.reset = function() {
 	this.x = this.xo;
 	this.y = this.yo;
 
+
+	player.wins = 0;
+	document.querySelector('.score').innerHTML = "Score: " + this.wins;
 };
 
 
