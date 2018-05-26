@@ -1,3 +1,19 @@
 body {
     text-align: center;
+    color: #7d97ad;
+}
+
+.score {
+  margin: 12px 0 -24px 0;
+  font-size: 24px;
+}
+
+
+.footer {
+    font-size: 12px;
+}
+
+img.social {
+    width: 48px;
+    height: 48px;
 }
