@@ -30,7 +30,8 @@ Enemy.prototype.update = function(dt) {
   	}
 
     // Check for collisions with the player
-    if (this.y == player.y && (this.x > player.x - 20 && this.x < player.x + 20)) {
+    // if (this.y == player.y && (this.x > player.x - 20 && this.x < player.x + 20)) {
+    if (this.y == player.y && (this.x > player.x - 80 && this.x < player.x + 80)) {
 
       // Reset the player to her original position
       player.reset();
