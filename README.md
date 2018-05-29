@@ -4,7 +4,7 @@
 
 * Download all files [here](https://github.com/Artur83/frontend-nanodegree-arcade-game/archive/master.zip)
 * Open index.html in your browser
-* You can also click [here](https://htmlpreview.github.io/?https://github.com/Artur83/frontend-nanodegree-arcade-game/blob/master/index.html) to access the site without downloading
+* You can also click [here](http://dacarloavenezia.it/prv/frontend-nanodegree-arcade-game/index.html) to access the site without downloading
 
 
 ## How to play
